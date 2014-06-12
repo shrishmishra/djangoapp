@@ -1,0 +1,687 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 15, in home
+    if  request.user.is_authenticated():
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 202, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 268, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 18, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/__init__.py", line 134, in get_user
+    user_id = request.session[SESSION_KEY]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 46, in __getitem__
+    return self._session[key]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 168, in _get_session
+    self._session_cache = self.load()
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/db.py", line 18, in load
+    expire_date__gt=timezone.now()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 394, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 839, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Library/Python/2.7/site-packages/django/db/backends/__init__.py", line 324, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 405, in _cursor
+    self.connection = Database.connect(**kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+[03/Mar/2014 21:36:55] "GET / HTTP/1.1" 500 146554
+[03/Mar/2014 21:37:41] "GET / HTTP/1.1" 200 937
+Not Found: /css/style.css
+[03/Mar/2014 21:37:41] "GET /css/style.css HTTP/1.1" 404 2749
+Validating models...
+
+0 errors found
+March 03, 2014 - 21:36:54
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:42:36] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:43:42] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:43:44] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:44:15] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:44:18] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:44:19] "GET / HTTP/1.1" 500 67459
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+[03/Mar/2014 21:44:27] "GET / HTTP/1.1" 500 67459
+[03/Mar/2014 21:46:17] "GET / HTTP/1.1" 200 937
+Not Found: /css/style.css
+[03/Mar/2014 21:46:17] "GET /css/style.css HTTP/1.1" 404 2749
+Validating models...
+
+0 errors found
+March 03, 2014 - 21:42:33
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 21:48:33] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:48:33] "GET /css/style.css HTTP/1.1" 404 2749
+Not Found: /logout
+[03/Mar/2014 21:48:35] "POST /logout HTTP/1.1" 404 2729
+Validating models...
+
+0 errors found
+March 03, 2014 - 21:46:24
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 21:50:09] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:50:09] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:50:11] "POST /logout HTTP/1.1" 200 1330
+[03/Mar/2014 21:50:11] "GET /static/signin.css HTTP/1.1" 304 0
+[03/Mar/2014 21:50:22] "POST /login HTTP/1.1" 200 1039
+Not Found: /css/style.css
+[03/Mar/2014 21:50:22] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:50:25] "POST /logout HTTP/1.1" 200 1330
+[03/Mar/2014 21:50:41] "POST /login HTTP/1.1" 200 4778
+[03/Mar/2014 21:50:50] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:50:50] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:50:54] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:50:54] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:51:04] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:51:04] "GET /css/style.css HTTP/1.1" 404 2872
+Validating models...
+
+0 errors found
+March 03, 2014 - 21:49:02
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 21:54:11] "GET / HTTP/1.1" 200 1037
+Not Found: /css/style.css
+[03/Mar/2014 21:54:11] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:54:13] "POST /logout HTTP/1.1" 200 5124
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 21:54:13] "GET /inc/css/main.css HTTP/1.1" 404 2881
+[03/Mar/2014 21:54:13] "GET /inc/css/main-en.css HTTP/1.1" 404 2890
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 21:54:13] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+[03/Mar/2014 21:54:15] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2977
+Not Found: /cdn-cgi/ping
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 21:54:15] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2899
+[03/Mar/2014 21:54:15] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+[03/Mar/2014 21:54:27] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 21:54:37] "POST /login HTTP/1.1" 200 1040
+Not Found: /css/style.css
+[03/Mar/2014 21:54:37] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:54:43] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+[03/Mar/2014 21:54:43] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2977
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 21:54:43] "GET /inc/css/main.css HTTP/1.1" 404 2881
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 21:54:43] "GET /inc/css/main-en.css HTTP/1.1" 404 2890
+[03/Mar/2014 21:54:43] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 21:54:43] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2899
+[03/Mar/2014 21:55:10] "GET / HTTP/1.1" 200 1330
+Not Found: /works
+[03/Mar/2014 21:55:14] "GET /works HTTP/1.1" 404 2848
+[03/Mar/2014 21:55:18] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 21:55:28] "POST /login HTTP/1.1" 200 1039
+Not Found: /css/style.css
+[03/Mar/2014 21:55:28] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:55:41] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+[03/Mar/2014 21:55:41] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2977
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 21:55:41] "GET /inc/css/main.css HTTP/1.1" 404 2881
+[03/Mar/2014 21:55:41] "GET /inc/css/main-en.css HTTP/1.1" 404 2890
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 21:55:41] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 21:55:41] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2899
+[03/Mar/2014 21:55:43] "GET / HTTP/1.1" 200 1330
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrishkrish@gmail.com' for key 'username'")
+[03/Mar/2014 21:55:50] "POST /login HTTP/1.1" 500 106647
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@gmail.com' for key 'username'")
+[03/Mar/2014 21:56:02] "POST /login HTTP/1.1" 500 106473
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+[03/Mar/2014 21:56:13] "POST /login HTTP/1.1" 500 106439
+[03/Mar/2014 21:56:34] "POST /login HTTP/1.1" 200 4778
+[03/Mar/2014 21:56:37] "GET / HTTP/1.1" 200 1330
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+[03/Mar/2014 21:57:09] "POST /login HTTP/1.1" 500 106436
+[03/Mar/2014 21:57:19] "POST /login HTTP/1.1" 200 1039
+Not Found: /css/style.css
+[03/Mar/2014 21:57:19] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:57:24] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+[03/Mar/2014 21:57:24] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2977
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 21:57:24] "GET /inc/css/main.css HTTP/1.1" 404 2881
+[03/Mar/2014 21:57:24] "GET /inc/css/main-en.css HTTP/1.1" 404 2890
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 21:57:24] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 21:57:24] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2899
+[03/Mar/2014 21:57:32] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 21:57:59] "POST /login HTTP/1.1" 200 4778
+[03/Mar/2014 21:58:03] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 21:58:24] "POST /login HTTP/1.1" 200 1044
+Not Found: /css/style.css
+[03/Mar/2014 21:58:25] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 21:59:02] "GET / HTTP/1.1" 200 1038
+Not Found: /css/style.css
+[03/Mar/2014 21:59:02] "GET /css/style.css HTTP/1.1" 404 2872
+[03/Mar/2014 22:16:21] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 22:16:22] "GET /inc/css/main-en.css HTTP/1.1" 404 2890
+[03/Mar/2014 22:16:22] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+[03/Mar/2014 22:16:22] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2977
+[03/Mar/2014 22:16:22] "GET /inc/css/main.css HTTP/1.1" 404 2881
+Not Found: /cdn-cgi/ping
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 22:16:22] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2899
+[03/Mar/2014 22:16:22] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2887
+[03/Mar/2014 22:17:03] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:17:30] "POST /login HTTP/1.1" 200 4778
+[03/Mar/2014 22:17:41] "GET / HTTP/1.1" 200 1330
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+[03/Mar/2014 22:17:49] "POST /login HTTP/1.1" 500 106438
+[03/Mar/2014 22:18:02] "GET /admin HTTP/1.1" 301 0
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+[03/Mar/2014 22:18:03] "GET /admin/ HTTP/1.1" 500 105620
+[03/Mar/2014 22:18:08] "GET /admin HTTP/1.1" 301 0
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+[03/Mar/2014 22:18:08] "GET /admin/ HTTP/1.1" 500 106019
+[03/Mar/2014 22:19:01] "GET /admin HTTP/1.1" 301 0
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+[03/Mar/2014 22:19:01] "GET /admin/ HTTP/1.1" 500 106019
+Validating models...
+
+0 errors found
+March 03, 2014 - 21:52:36
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 22:19:57] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:20:02] "GET /admin/ HTTP/1.1" 200 1865
+[03/Mar/2014 22:20:06] "POST /admin/ HTTP/1.1" 302 0
+[03/Mar/2014 22:20:07] "GET /admin/ HTTP/1.1" 200 6639
+[03/Mar/2014 22:20:15] "GET /admin/auth/user/ HTTP/1.1" 200 11235
+[03/Mar/2014 22:20:15] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:21:20] "POST /admin/auth/user/ HTTP/1.1" 200 4220
+[03/Mar/2014 22:21:22] "POST /admin/auth/user/ HTTP/1.1" 302 0
+[03/Mar/2014 22:21:22] "GET /admin/auth/user/ HTTP/1.1" 200 6262
+[03/Mar/2014 22:21:22] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:21:26] "GET /admin/auth/user/add/ HTTP/1.1" 200 4679
+[03/Mar/2014 22:21:26] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:21:33] "GET /admin/auth/user/ HTTP/1.1" 200 6143
+[03/Mar/2014 22:21:39] "GET / HTTP/1.1" 200 1028
+Not Found: /css/style.css
+[03/Mar/2014 22:21:39] "GET /css/style.css HTTP/1.1" 404 2749
+[03/Mar/2014 22:21:42] "POST /logout HTTP/1.1" 200 5124
+Not Found: /inc/css/main.css
+[03/Mar/2014 22:21:42] "GET /inc/css/main.css HTTP/1.1" 404 2758
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 22:21:42] "GET /inc/css/main-en.css HTTP/1.1" 404 2767
+[03/Mar/2014 22:21:42] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2764
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+[03/Mar/2014 22:21:44] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2854
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 22:21:44] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2764
+[03/Mar/2014 22:21:44] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2776
+[03/Mar/2014 22:21:46] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:22:06] "POST /login HTTP/1.1" 200 4778
+[03/Mar/2014 22:22:09] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:22:14] "GET /admin/auth/user/ HTTP/1.1" 200 1885
+[03/Mar/2014 22:22:16] "POST /admin/auth/user/ HTTP/1.1" 302 0
+[03/Mar/2014 22:22:16] "GET /admin/auth/user/ HTTP/1.1" 200 6463
+[03/Mar/2014 22:22:16] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:22:19] "GET / HTTP/1.1" 200 1028
+Not Found: /css/style.css
+[03/Mar/2014 22:22:19] "GET /css/style.css HTTP/1.1" 404 2749
+[03/Mar/2014 22:22:32] "GET /admin/ HTTP/1.1" 200 6536
+[03/Mar/2014 22:22:44] "GET /admin/doc/ HTTP/1.1" 200 1298
+[03/Mar/2014 22:22:53] "GET /admin/sites/site/ HTTP/1.1" 200 4880
+[03/Mar/2014 22:22:53] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:22:56] "GET /admin/sites/site/1/ HTTP/1.1" 200 3981
+[03/Mar/2014 22:22:56] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:23:02] "GET /admin/blog/posts/ HTTP/1.1" 200 4418
+[03/Mar/2014 22:23:02] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:23:08] "GET /admin/blog/posts/add/ HTTP/1.1" 200 5069
+[03/Mar/2014 22:23:08] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:23:32] "POST /admin/blog/posts/add/ HTTP/1.1" 302 0
+[03/Mar/2014 22:23:32] "GET /admin/blog/posts/ HTTP/1.1" 200 4760
+[03/Mar/2014 22:23:32] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[03/Mar/2014 22:23:35] "GET / HTTP/1.1" 200 1198
+Not Found: /css/style.css
+[03/Mar/2014 22:23:35] "GET /css/style.css HTTP/1.1" 404 2749
+[03/Mar/2014 22:23:41] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+[03/Mar/2014 22:23:41] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2854
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 22:23:41] "GET /inc/css/main.css HTTP/1.1" 404 2758
+[03/Mar/2014 22:23:41] "GET /inc/css/main-en.css HTTP/1.1" 404 2767
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 22:23:41] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2764
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 22:23:41] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2776
+[03/Mar/2014 22:23:45] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:23:57] "POST /login HTTP/1.1" 200 1210
+Not Found: /css/style.css
+[03/Mar/2014 22:23:57] "GET /css/style.css HTTP/1.1" 404 2749
+Validating models...
+
+0 errors found
+March 03, 2014 - 22:19:39
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 22:27:34] "POST /logout HTTP/1.1" 200 5124
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+[03/Mar/2014 22:27:34] "GET /inc/css/main.css HTTP/1.1" 404 2758
+[03/Mar/2014 22:27:34] "GET /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js HTTP/1.1" 404 2854
+[03/Mar/2014 22:27:34] "GET /inc/css/main-en.css HTTP/1.1" 404 2767
+Not Found: /img/logo-cuoma.gif
+[03/Mar/2014 22:27:34] "GET /img/logo-cuoma.gif HTTP/1.1" 404 2764
+Not Found: /cdn-cgi/ping
+[03/Mar/2014 22:27:34] "GET /cdn-cgi/ping?cf[location]=404&cf[js]=1 HTTP/1.1" 404 2776
+Validating models...
+
+0 errors found
+March 03, 2014 - 22:26:50
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Mar/2014 22:28:31] "GET /logout HTTP/1.1" 200 1330
+[03/Mar/2014 22:28:37] "GET / HTTP/1.1" 200 1330
+[03/Mar/2014 22:28:50] "POST /login HTTP/1.1" 200 1210
+Not Found: /css/style.css
+[03/Mar/2014 22:28:50] "GET /css/style.css HTTP/1.1" 404 2749
+[03/Mar/2014 22:28:53] "POST /logout HTTP/1.1" 200 1330
+[03/Mar/2014 22:29:04] "GET /logout HTTP/1.1" 200 1330
+Validating models...
+
+0 errors found
+March 03, 2014 - 22:28:27
+Django version 1.5, using settings 'FirstBlog.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.

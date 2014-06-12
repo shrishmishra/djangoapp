@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>First Blog</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="/static/signin.css" rel="stylesheet">
+    <link href="/static/blog.css" rel="stylesheet">
+</head>
+ 
+<body>
+
+<style>
+
+</style>
+<script>
+</script>
+<!--
+<form method="post" action="logout">
+    <input type="submit" name="logout" value="logout">
+</form> -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <a class="navbar-brand">Quoted</a>
+        <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">{{a}}</a></p>
+        <form method="post" action="logout">
+            <a class="navbar-text navbar-right" href="javascript:void(0)" onclick="$(this).closest('form').submit();">Logout</a>
+        </form>
+</nav>
+<div class="container">
+
+            <div class="row">
+                <div class="col-md-3" ></div>
+                <div class="col-md-5 post">
+                    <h4> Write a post </h4>
+                    <form role="form" action="savePost" method="post">
+                             <input type="text" class="form-control" name="bodyText" placeholder="What's going on ?" required > 
+                            <button type="submit" class="btn btn-sm btn-primary">Post</button>
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        {% for post in posts reversed %}
+            <div class="row">
+                <div class="col-md-3" class="table-striped"></div>
+                
+                <div class="col-md-5 post" >
+                    <h4>{{ post.author }} </h4>
+                    <p class="lead">
+                        {{ post.bodytext }}
+                        <footer>
+                            <form action="likePost" method="post" style="display:inline">
+                                <input type="hidden" name="id" value="{{post.id}}">
+                                <a href="javascript:void(0)" onclick="$(this).closest('form').submit();">Like</a>
+                             <span class="glyphicon glyphicon-star">{{post.likes}}</span>
+                            </form>
+                                &nbsp;
+                            <form action="deletePost" method="post" style="display:inline">
+                                <input type="hidden" name="id" value="{{post.id}}">
+                                <a href="javascript:void(0)" onclick="$(this).closest('form').submit();">Delete</a>
+                            </form>
+                        </footer>
+                    </p>
+                </div>
+                <div class="col-md-4 static">
+                     <!-- <img src="/static/shrish.jpg"/> -->
+                </div>
+            </div>
+        {% endfor %} 
+</div>
+
+</body>
+     
+</html>

@@ -1,0 +1,12 @@
+.post {
+    background-color : #fff;
+}
+
+.row {
+    margin-bottom : 25px;
+}
+.container {
+    margin-top : 50px
+}
+
+.lead { font-size : 14px; }

@@ -1,0 +1,2500 @@
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 34, in login
+    return render_to_response('blog.html', {'posts' : entries , a : username , b : password})
+NameError: global name 'a' is not defined
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 34, in login
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 328, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'a'
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'sachin@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'sachin1@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 36, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'sachin1@gmail.com' for key 'username'")
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrishkrish@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@gmail.com' for key 'username'")
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 179, in create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 39, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@gmail.com' for key 'username'")
+Not Found: /css/style.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 16, in home
+    auth.login(request, user)
+NameError: global name 'user' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+NameError: global name 'username' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+NameError: global name 'username' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+NameError: global name 'username' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+NameError: global name 'username' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries , 'a' : username , 'b' : password})
+NameError: global name 'username' is not defined
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 179, in create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 15, in home
+    if  request.user.is_authenticated():
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 202, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 268, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 18, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/__init__.py", line 134, in get_user
+    user_id = request.session[SESSION_KEY]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 46, in __getitem__
+    return self._session[key]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 168, in _get_session
+    self._session_cache = self.load()
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/db.py", line 18, in load
+    expire_date__gt=timezone.now()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 394, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 839, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Library/Python/2.7/site-packages/django/db/backends/__init__.py", line 324, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 405, in _cursor
+    self.connection = Database.connect(**kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+Not Found: /css/style.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48
+    except KeyError;
+                   ^
+SyntaxError: invalid syntax
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /logout
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /cdn-cgi/ping
+Not Found: /img/logo-cuoma.gif
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /works
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrishkrish@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /img/logo-cuoma.gif
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'vikas@gmail.com' for key 'username'")
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 219, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 198, in inner
+    current_app=self.name):
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 467, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 311, in app_dict
+    self._populate()
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import blog.views.shrish. View does not exist in module blog.views.
+Not Found: /css/style.css
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /css/style.css
+Not Found: /cdn-cgi/nexp/abv=1870252173/cloudflare/rocket.js
+Not Found: /inc/css/main.css
+Not Found: /inc/css/main-en.css
+Not Found: /img/logo-cuoma.gif
+Not Found: /cdn-cgi/ping
+Not Found: /css/style.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 15, in home
+    if  request.user.is_authenticated():
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 202, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 268, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 18, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/__init__.py", line 134, in get_user
+    user_id = request.session[SESSION_KEY]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 46, in __getitem__
+    return self._session[key]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 168, in _get_session
+    self._session_cache = self.load()
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/db.py", line 18, in load
+    expire_date__gt=timezone.now()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 394, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 839, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Library/Python/2.7/site-packages/django/db/backends/__init__.py", line 324, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 405, in _cursor
+    self.connection = Database.connect(**kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+Not Found: /favicon.ico
+Not Found: /css/style.css
+Not Found: /images/favicon.ico
+Not Found: /css/style.css
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 179, in create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 179, in create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /images/favicon.ico
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /favicon.ico
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /img/shrish.jpg
+Not Found: /css/style.css
+Not Found: /Users/shrish/django_project/FirstBlog/img/shrish.jpg
+Not Found: /css/style.css
+Not Found: /Users/shrish/django_project/FirstBlog/img/shrish.jpg
+Not Found: /Users/shrish/django_project/FirstBlog/img/shrish.jpg
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /savePost
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /savePost
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 622, in save_base
+    manager.using(using).filter(pk=pk_val).exists())):
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 667, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 685, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1259, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1190, in add_filter
+    connector)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 71, in add
+    value = obj.prepare(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 339, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 322, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 555, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'SimpleLazyObject'
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 622, in save_base
+    manager.using(using).filter(pk=pk_val).exists())):
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 667, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 685, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1259, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1190, in add_filter
+    connector)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 71, in add
+    value = obj.prepare(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 339, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 322, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 555, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'SimpleLazyObject'
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 622, in save_base
+    manager.using(using).filter(pk=pk_val).exists())):
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 667, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 685, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1259, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1190, in add_filter
+    connector)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 71, in add
+    value = obj.prepare(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 339, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 322, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 555, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'shrish'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 27
+    title = request.POST.get('title)
+                                   ^
+SyntaxError: EOL while scanning string literal
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 27
+    title = request.POST.get('title)
+                                   ^
+SyntaxError: EOL while scanning string literal
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 622, in save_base
+    manager.using(using).filter(pk=pk_val).exists())):
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 667, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 685, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1259, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/query.py", line 1190, in add_filter
+    connector)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 71, in add
+    value = obj.prepare(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/where.py", line 339, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 322, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 555, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'shrish'
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 34, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'title' cannot be null")
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 34, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 204, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Field 'title' doesn't have a default value
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.title = title ;
+NameError: global name 'title' is not defined
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 29, in savePost
+    newPost.title = title ;
+NameError: global name 'title' is not defined
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 204, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Field 'title' doesn't have a default value
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 204, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Field 'title' doesn't have a default value
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 204, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Field 'title' doesn't have a default value
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 204, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Field 'title' doesn't have a default value
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 17, in home
+    return render_to_response('blog.html', {'posts' : entries.reverse() , 'a' : request.user.username , 'b' : 'fewf'})
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 172, in render_to_string
+    return t.render(Context(dictionary))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'test123.blog_posts' doesn't exist")
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'bodytext' cannot be null")
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /deletePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 38, in deletePost
+    post = posts.objects(pk=id)
+TypeError: 'Manager' object is not callable
+Not Found: /css/style.css
+Internal Server Error: /deletePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 40, in deletePost
+    return render_to_response('blog.html', {'posts' : entries , 'a' : request.user.username , 'b' : 'fewf'})
+NameError: global name 'entries' is not defined
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 32, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'bodytext' cannot be null")
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /likePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: likePost() takes no arguments (1 given)
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Not Found: /css/style.css
+Internal Server Error: /deletePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 48, in deletePost
+    post = posts.objects.get(pk=id)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: posts matching query does not exist. Lookup parameters were {'pk': None}
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 65, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 65, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Not Found: /home/
+Internal Server Error: /likePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 40, in likePost
+    post = posts.objects.get(pk=id);
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: posts matching query does not exist. Lookup parameters were {'pk': None}
+Internal Server Error: /likePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 40, in likePost
+    post = posts.objects.get(pk=id);
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: posts matching query does not exist. Lookup parameters were {'pk': None}
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tanvi@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /savePost
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 33, in savePost
+    newPost.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'bodytext' cannot be null")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Not Found: /images/favicon.ico
+Not Found: /images/favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 16, in home
+    if  request.user.is_authenticated():
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 202, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 268, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 18, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/__init__.py", line 134, in get_user
+    user_id = request.session[SESSION_KEY]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 46, in __getitem__
+    return self._session[key]
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/base.py", line 168, in _get_session
+    self._session_cache = self.load()
+  File "/Library/Python/2.7/site-packages/django/contrib/sessions/backends/db.py", line 18, in load
+    expire_date__gt=timezone.now()
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 394, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 839, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Library/Python/2.7/site-packages/django/db/backends/__init__.py", line 324, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 405, in _cursor
+    self.connection = Database.connect(**kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+Not Found: /favicon.ico
+Not Found: /images/favicon.ico
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tanvi@gmail.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tanvi@amazon.com' for key 'username'")
+Not Found: /favicon.ico
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 62, in login
+    user = auth.authenticate(username=username, password=password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/__init__.py", line 59, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 168, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 394, in get
+    num = len(clone)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 839, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Library/Python/2.7/site-packages/django/db/backends/__init__.py", line 324, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 405, in _cursor
+    self.connection = Database.connect(**kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 179, in create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Not Found: /images/favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shrish/django_project/FirstBlog/blog/views.py", line 69, in login
+    user = User.objects.create_user(username = username , email = email , password = password);
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 186, in create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1673, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 122, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'shrish@amazon.com' for key 'username'")
+Not Found: /images/favicon.ico
+Not Found: /images/favicon.ico
+Not Found: /favicon.ico
